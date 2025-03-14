@@ -36,6 +36,12 @@
   <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="action.php">Action</a></li>
   </ul>
+  <li class="nav-item">
+ <a class="nav-link" href="bookings.php">Pesan Tiket</a>
+</li>
+      <li class="nav-item">
+ <a class="nav-link" href="view_bookings.php">Lihat Pesanan</a>
+      </li>
 </li>
           </ul>
           <div>
@@ -46,9 +52,10 @@
         <?php } ?>
       </div>
       <div class="container fluid">
-        <h2>Welcome, <?php echo $_SESSION['user_name']; ?>!</h2>
+
         
-    </div>
+        
+    </div><h2>Welcome, <?php echo $_SESSION['user_name']; ?>!</h2>
           <a href="logout.php" class="btn btn-danger">Logout</a>
           <form class="d-flex" role="search" action = "search.php" method = "get">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
